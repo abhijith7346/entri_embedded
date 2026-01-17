@@ -31,7 +31,7 @@ int main(){
 
     int height = 0;
 
-    while (16)
+    while (1)
     {
         printf("enter n for pyramid height\n");
          printf("enter 0 for exit\n");
