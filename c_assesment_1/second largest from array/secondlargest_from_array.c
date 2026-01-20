@@ -1,10 +1,7 @@
 #include<stdio.h>
 
-void main(){
 
-    int arr[] = {1, 2, 8, 9, 6,10, 5};
-    int count = 7;
-
+int findSecondLargest(int arr[], int count){
     int largest = arr[0];
     int second_largest = 0;
 
@@ -20,8 +17,28 @@ void main(){
                 
         }
     }
+
+    return second_largest;
+}
+
+
+
+void main(){
+
+    printf("Enter number of elements in array\n");
+    int count = 0;
+    scanf("%d", &count);
+    int arr[count];
     
+    for (size_t i = 0; i < count; i++)
+    {
+        printf("Enter element %d\n", i+1);
+        scanf("%d", &arr[i]);
+    }
+    
+    
+    int second_largest = findSecondLargest(arr, count);
+
     printf("The second largest element is %d\n", second_largest);
-    printf("The largest element is %d\n", largest);
 
 }
